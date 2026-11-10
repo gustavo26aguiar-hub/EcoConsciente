@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EcoConsciente: sustentabilidade, consumo consciente e ferramentas práticas para estudantes.">
+  <meta property="og:site_name" content="EcoConsciente">
+  <meta property="og:title" content="EcoConsciente">
+  <meta name="theme-color" content="#294b38">
+  <title>EcoConsciente</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="reading-progress" id="readingProgress" aria-hidden="true"><span id="readingProgressBar"></span></div>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="EcoConsciente, início">
+      <span class="brand-symbol" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M8 28C8 14 19 7 33 7c0 14-7 25-20 25"/><path d="M9 32c5-8 11-13 20-18"/></svg></span>
+      <span>EcoConsciente</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
+      <a href="#sobre">O projeto</a><a href="#aprender">Aprender</a><a href="#reciclagem">Reciclagem</a><a href="#desafio">Desafio</a><a href="#ferramentas">Ferramentas</a><a href="#fontes">Fontes</a>
+    </nav>
+    <a class="nav-cta" href="#quiz">Fazer o quiz <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="eyebrow-line"></span> EDUCAÇÃO AMBIENTAL · ODS 12</span>
+        <h1>O jeito como usamos as coisas <em>também importa.</em></h1>
+        <p>O EcoConsciente é um espaço para entender o impacto das escolhas do dia a dia — da compra de um lanche ao descarte de uma embalagem — e descobrir alternativas possíveis.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#aprender">Explorar o conteúdo <span>↓</span></a>
+          <a class="button button-quiet" href="#desafio">Começar um desafio <span>↗</span></a>
+        </div>
+        <div class="hero-caption"><span class="caption-mark">12</span><span><strong>Consumo e produção responsáveis</strong><small>Um dos Objetivos de Desenvolvimento Sustentável da ONU.</small></span></div>
+      </div>
+      <div class="hero-media">
+        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1500&q=85" alt="Lago cercado por montanhas e vegetação natural" fetchpriority="high">
+        <div class="photo-note"><span>01 / 04</span><span>Natureza, recursos e escolhas</span></div>
+      </div>
+    </section>
+
+    <section class="intro-band" id="sobre">
+      <div><span class="eyebrow">SOBRE O PROJETO</span><h2>Informação para transformar<br><em>hábitos em escolhas.</em></h2></div>
+      <p>Este projeto educativo apresenta sustentabilidade de um jeito direto, com exemplos próximos da rotina de estudantes. A proposta não é cobrar perfeição: é ajudar a perceber problemas, conhecer soluções e entender que mudanças também dependem de empresas, governos e comunidades.</p>
+    </section>
+
+    <section class="section" id="aprender">
+      <div class="section-head">
+        <div><span class="eyebrow">01 · ENTENDER O TEMA</span><h2>Sustentabilidade<br><em>na vida real.</em></h2></div>
+        <p>Sustentabilidade é buscar equilíbrio entre meio ambiente, bem-estar social e atividade econômica, sem comprometer as condições de vida das próximas gerações.</p>
+      </div>
+      <div class="pillar-grid">
+        <article class="pillar-card">
+          <img src="images/rio-floresta.webp" alt="Rio limpo atravessando uma floresta verde e preservada" loading="lazy" decoding="async">
+          <div class="card-body"><span class="card-index">01 / AMBIENTAL</span><h3>Proteger os ecossistemas</h3><p>Conservar água, solo, ar, florestas e biodiversidade. Isso também significa reduzir a poluição e evitar o desperdício de recursos naturais.</p></div>
+        </article>
+        <article class="pillar-card">
+          <img src="images/jovens-plantio.webp" alt="Jovens plantando juntos uma muda de árvore" loading="lazy" decoding="async">
+          <div class="card-body"><span class="card-index">02 / SOCIAL</span><h3>Cuidar das pessoas</h3><p>Promover saúde, educação, respeito, inclusão e condições dignas. Os impactos ambientais também afetam a vida das comunidades.</p></div>
+        </article>
+        <article class="pillar-card">
+          <img src="images/horta-comunitaria.webp" alt="Pessoas cuidando de uma horta comunitária com canteiros de verduras" loading="lazy" decoding="async">
+          <div class="card-body"><span class="card-index">03 / ECONÔMICO</span><h3>Produzir com responsabilidade</h3><p>Valorizar produtos duráveis, trabalho justo e processos que usem melhor os materiais e evitem perdas desnecessárias.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="feature-row">
+      <div class="feature-photo"><img src="images/coleta-reciclagem.webp" alt="Trabalhadores de uma cooperativa separando materiais recicláveis" loading="lazy" decoding="async"></div>
+      <div class="feature-copy"><span class="eyebrow">DO DESCARTE AO REUSO</span><h2>O resíduo não<br>some quando sai<br><em>da nossa mão.</em></h2><p>O lixo continua existindo depois que o caminhão passa. A forma como os materiais são separados, coletados e tratados influencia a poluição, a saúde pública e o trabalho de catadores e cooperativas.</p><a class="text-link" href="#reciclagem">Aprender a separar materiais <span>→</span></a></div>
+    </section>
+
+    <section class="section content-section">
+      <div class="section-head"><div><span class="eyebrow">02 · CONHECIMENTO PARA O COTIDIANO</span><h2>Onde a sustentabilidade<br><em>entra na rotina?</em></h2></div><p>Não é um assunto distante. Ele aparece na escola, nas compras, na alimentação, no transporte e no uso de água e energia.</p></div>
+      <div class="topic-grid">
+        <article><span class="topic-no">A</span><h3>Na escola</h3><p>Uma escola pode mapear o desperdício de papel e comida, instalar pontos de separação, cuidar de áreas verdes e discutir soluções com estudantes, funcionários e comunidade.</p></article>
+        <article><span class="topic-no">B</span><h3>Entre adolescentes</h3><p>Moda rápida, eletrônicos, publicidade e tendências nas redes influenciam compras. Antes de adquirir algo, vale perguntar: preciso, vou usar bastante, posso consertar ou pegar emprestado?</p></article>
+        <article><span class="topic-no">C</span><h3>Água e energia</h3><p>Banhos mais curtos, torneiras fechadas, lâmpadas apagadas em ambientes vazios e uso consciente de aparelhos ajudam a evitar desperdício. Vazamentos devem ser comunicados e corrigidos.</p></article>
+        <article><span class="topic-no">D</span><h3>Problemas ambientais no Brasil</h3><p>Desmatamento, queimadas, poluição de rios, descarte inadequado de resíduos e desigualdade no acesso ao saneamento são desafios que variam entre regiões e municípios.</p></article>
+        <article><span class="topic-no">E</span><h3>Poluição e preservação</h3><p>Resíduos nas ruas podem chegar a bueiros, córregos e oceanos. Preservar áreas verdes, respeitar a fauna e descartar corretamente são atitudes importantes, junto de políticas públicas.</p></article>
+        <article><span class="topic-no">F</span><h3>Os 5 Rs</h3><p><strong>Repensar, recusar, reduzir, reutilizar e reciclar.</strong> A ordem ajuda a lembrar que evitar gerar resíduos costuma ser melhor do que depender apenas da reciclagem.</p></article>
+      </div>
+    </section>
+
+    <section class="ods-panel" id="ods">
+      <div class="ods-stamp"><span>ODS</span><strong>12</strong></div>
+      <div class="ods-text"><span class="eyebrow eyebrow-light">AGENDA 2030 · NAÇÕES UNIDAS</span><h2>Consumo e produção<br><em>responsáveis.</em></h2><p>A ODS 12 busca assegurar padrões sustentáveis de consumo e produção. Entre suas metas estão o uso eficiente dos recursos naturais, a redução do desperdício de alimentos, o manejo adequado de resíduos e a informação para escolhas mais responsáveis.</p><a class="button button-light" href="https://brasil.un.org/pt-br/sdgs/12" target="_blank" rel="noopener noreferrer">Ver metas oficiais da ODS 12 ↗</a></div>
+    </section>
+
+    <section class="section" id="reciclagem">
+      <div class="section-head"><div><span class="eyebrow">03 · GUIA INTERATIVO</span><h2>Como separar<br><em>cada material?</em></h2></div><p>Escolha um tipo de resíduo para ver cuidados básicos. A aceitação pode mudar conforme a coleta seletiva da sua cidade.</p></div>
+      <div class="recycle-tool">
+        <div class="material-picker" role="group" aria-label="Selecione um material">
+          <button class="material-button active" data-material="plastico" aria-pressed="true"><span class="material-symbol plastic-symbol">PL</span>Plástico</button>
+          <button class="material-button" data-material="papel" aria-pressed="false"><span class="material-symbol paper-symbol">PA</span>Papel</button>
+          <button class="material-button" data-material="vidro" aria-pressed="false"><span class="material-symbol glass-symbol">VI</span>Vidro</button>
+          <button class="material-button" data-material="metal" aria-pressed="false"><span class="material-symbol metal-symbol">ME</span>Metal</button>
+          <button class="material-button" data-material="organico" aria-pressed="false"><span class="material-symbol organic-symbol">OR</span>Orgânicos</button>
+        </div>
+        <article class="material-detail" aria-live="polite">
+          <div class="material-detail-head"><span class="eyebrow" id="materialCategory">MATERIAL · PLÁSTICO</span><h3 id="materialTitle">Plástico</h3><p id="materialIntro">Embalagens, garrafas e frascos podem ser recicláveis quando o sistema local os recebe.</p></div>
+          <div class="material-columns"><div><h4>Como preparar</h4><p id="materialHow">Esvazie a embalagem, retire o excesso de restos de alimentos e, se possível, dê uma enxaguada rápida. Deixe secar.</p></div><div><h4>Cuidados importantes</h4><p id="materialCare">Não misture com resíduos orgânicos. Tampas, rótulos e plásticos flexíveis podem ter regras diferentes na coleta local.</p></div></div>
+          <div class="material-example" id="materialExample">Exemplos: garrafas PET, frascos de produtos de limpeza e potes plásticos aceitos pelo serviço local.</div>
+        </article>
+      </div>
+      <p class="small-note">Atenção: pilhas, baterias, lâmpadas, eletrônicos, medicamentos e óleo de cozinha precisam de pontos de entrega específicos. Não os coloque automaticamente no reciclável comum.</p>
+    </section>
+
+    <section class="section myths-section">
+      <div class="section-head"><div><span class="eyebrow">04 · MITOS E VERDADES</span><h2>Nem tudo que parece<br><em>certo é verdade.</em></h2></div><p>Abra os cartões para conferir explicações rápidas e evitar informações enganosas.</p></div>
+      <div class="myth-list">
+        <details><summary>“Todo plástico pode ser reciclado do mesmo jeito.”</summary><p><strong>Mito.</strong> Existem diferentes tipos de plástico e nem todos são aceitos por todos os sistemas. A separação, a limpeza e a infraestrutura disponível fazem diferença.</p></details>
+        <details><summary>“Reciclar é importante, mas reduzir vem antes.”</summary><p><strong>Verdade.</strong> Evitar uma embalagem desnecessária ou reutilizar um objeto pode impedir a geração de um resíduo. A reciclagem continua importante para materiais que já foram utilizados.</p></details>
+        <details><summary>“Se eu separar o lixo, qualquer caminhão vai reciclar tudo.”</summary><p><strong>Mito.</strong> A coleta e a destinação variam por município. O ideal é conhecer o serviço local e encaminhar materiais a cooperativas ou pontos de entrega confiáveis.</p></details>
+        <details><summary>“Consumo consciente é comprar apenas produtos caros e ecológicos.”</summary><p><strong>Mito.</strong> Muitas escolhas não exigem gastar mais: planejar compras, consertar, compartilhar, evitar desperdício e usar o que já se tem também contam.</p></details>
+        <details><summary>“Desperdício de alimentos também é um problema ambiental.”</summary><p><strong>Verdade.</strong> Alimentos descartados representam perda de água, energia, trabalho, transporte e outros recursos usados na produção e distribuição.</p></details>
+      </div>
+    </section>
+
+    <section class="data-section">
+      <div class="data-intro"><span class="eyebrow eyebrow-light">05 · BRASIL EM DADOS</span><h2>Os números ajudam<br>a enxergar o desafio.</h2><p>Indicadores oficiais mostram avanços e desigualdades. Observe sempre o ano, o recorte e o que cada indicador realmente mede.</p></div>
+      <div class="data-grid">
+        <article class="data-card"><strong>93,1%</strong><p>dos domicílios brasileiros tinham coleta de lixo em 2024, direta ou por caçamba.</p><small>IBGE · PNAD Contínua 2024</small></article>
+        <article class="data-card"><strong>86,9%</strong><p>dos domicílios tinham coleta direta de lixo em 2024. Nas áreas rurais, o percentual era 33,1%.</p><small>IBGE · PNAD Contínua 2024</small></article>
+        <article class="data-card"><strong>4,7 milhões</strong><p>de domicílios ainda queimavam resíduos na própria moradia em 2024, segundo o IBGE.</p><small>IBGE · PNAD Contínua 2024</small></article>
+      </div>
+      <p class="data-caveat">Coleta de lixo não é sinônimo de coleta seletiva nem garante que o material será reciclado. Os dados acima descrevem o destino informado pelos domicílios, conforme a pesquisa do IBGE.</p>
+    </section>
+
+    <section class="section challenge-section" id="desafio">
+      <div class="section-head"><div><span class="eyebrow">06 · COLOCAR EM PRÁTICA</span><h2>Desafio sustentável<br><em>de 7 dias.</em></h2></div><p>Escolha um hábito por dia. Marque quando concluir e acompanhe seu avanço. O progresso fica salvo neste navegador.</p></div>
+      <div class="challenge-layout">
+        <div class="challenge-list" id="challengeList">
+          <label class="challenge-item"><input type="checkbox" data-day="0"><span class="day-number">01</span><span class="challenge-description"><strong>Segunda · Economize água</strong><small>Feche a torneira enquanto escova os dentes ou ensaboa a louça.</small></span></label>
+          <label class="challenge-item"><input type="checkbox" data-day="1"><span class="day-number">02</span><span class="challenge-description"><strong>Terça · Use uma garrafa reutilizável</strong><small>Leve sua garrafa em vez de comprar uma bebida em embalagem descartável.</small></span></label>
+          <label class="challenge-item"><input type="checkbox" data-day="2"><span class="day-number">03</span><span class="challenge-description"><strong>Quarta · Separe recicláveis</strong><small>Identifique papel, plástico, vidro e metal aceitos na coleta da sua região.</small></span></label>
+          <label class="challenge-item"><input type="checkbox" data-day="3"><span class="day-number">04</span><span class="challenge-description"><strong>Quinta · Evite uma compra por impulso</strong><small>Antes de comprar, espere e pense se realmente precisa do produto.</small></span></label>
+          <label class="challenge-item"><input type="checkbox" data-day="4"><span class="day-number">05</span><span class="challenge-description"><strong>Sexta · Economize energia</strong><small>Apague luzes e desligue aparelhos que não estão em uso.</small></span></label>
+          <label class="challenge-item"><input type="checkbox" data-day="5"><span class="day-number">06</span><span class="challenge-description"><strong>Sábado · Reaproveite um objeto</strong><small>Conserte, reutilize ou dê uma nova função a algo antes de descartar.</small></span></label>
+          <label class="challenge-item"><input type="checkbox" data-day="6"><span class="day-number">07</span><span class="challenge-description"><strong>Domingo · Evite desperdício de alimentos</strong><small>Planeje uma refeição e aproveite o que já está disponível em casa.</small></span></label>
+        </div>
+        <aside class="progress-card">
+          <span class="eyebrow">SEU PROGRESSO</span><div class="progress-number"><strong id="progressCount">0</strong><span>/ 7 dias</span></div>
+          <div class="progress-track" role="progressbar" aria-label="Progresso dos desafios" aria-valuemin="0" aria-valuemax="7" aria-valuenow="0" id="challengeProgress"><span id="challengeProgressBar"></span></div>
+          <p id="progressMessage" aria-live="polite">Um passo de cada vez. Marque o primeiro desafio quando concluir.</p>
+          <button class="button button-reset" id="resetChallenges" type="button">Reiniciar desafios</button>
+          <small>Os dados ficam apenas no armazenamento local deste navegador.</small>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section calculator-section" id="ferramentas">
+      <div class="section-head"><div><span class="eyebrow">07 · SIMULAÇÃO EDUCATIVA</span><h2>Calcule um impacto<br><em>possível de evitar.</em></h2></div><p>Informe hábitos que você conseguiria mudar. A calculadora estima a quantidade de resíduos que poderia deixar de gerar em um ano.</p></div>
+      <div class="calculator">
+        <div class="calculator-inputs">
+          <label for="bottlesPerWeek">Garrafas descartáveis de 500 ml que você deixaria de usar por semana</label>
+          <div class="range-row"><input type="range" id="bottlesPerWeek" min="0" max="20" value="3"><output id="bottlesValue" for="bottlesPerWeek">3 por semana</output></div>
+          <label for="foodPerWeek">Quilos de alimentos que você conseguiria evitar desperdiçar por semana</label>
+          <div class="range-row"><input type="range" id="foodPerWeek" min="0" max="5" step="0.5" value="1"><output id="foodValue" for="foodPerWeek">1 kg por semana</output></div>
+          <p class="small-note">Ajuste os controles para simular uma mudança realista na sua rotina.</p>
+        </div>
+        <div class="calculator-result" aria-live="polite">
+          <span class="eyebrow">ESTIMATIVA EM 12 MESES</span>
+          <div class="result-stat"><strong id="annualBottles">156</strong><span>garrafas evitadas</span><div class="result-meter" aria-hidden="true"><span id="bottlesMeter"></span></div></div>
+          <div class="result-stat"><strong id="annualPlastic">3,1 kg</strong><span>de plástico evitado (estimado)</span><div class="result-meter" aria-hidden="true"><span id="plasticMeter"></span></div></div>
+          <div class="result-stat"><strong id="annualFood">52 kg</strong><span>de alimentos não desperdiçados</span><div class="result-meter" aria-hidden="true"><span id="foodMeter"></span></div></div>
+        </div>
+      </div>
+      <p class="estimate-note"><strong>Como calculamos:</strong> consideramos 52 semanas por ano e uma massa aproximada de 20 g por garrafa PET vazia de 500 ml. Os quilos de alimentos são calculados diretamente a partir do valor informado. São estimativas didáticas, não uma medição individual nem uma avaliação completa da pegada ambiental. O peso real das embalagens varia.</p>
+    </section>
+
+    <section class="section" id="quiz">
+      <div class="section-head"><div><span class="eyebrow">08 · TESTE SEU CONHECIMENTO</span><h2>Quiz EcoConsciente<br><em>o que você aprendeu?</em></h2></div><p>Responda às perguntas, veja a explicação de cada resposta e confira seu resultado no final.</p></div>
+      <div class="quiz-layout">
+        <div class="quiz-card" id="quizCard">
+          <div class="quiz-meta"><span id="quizCounter">PERGUNTA 1 DE 8</span><span id="quizScore">0 acertos</span></div>
+          <div class="quiz-track"><span id="quizBar"></span></div>
+          <h3 id="quizQuestion">Qual atitude ajuda a evitar desperdício de alimentos?</h3>
+          <div class="quiz-answers" id="quizAnswers"></div>
+          <div class="quiz-feedback" id="quizFeedback" aria-live="polite"></div>
+          <button class="button button-dark" id="quizNext" type="button" disabled>Próxima pergunta <span>→</span></button>
+        </div>
+        <aside class="quiz-aside"><span class="quiz-aside-number">08</span><h3>Aprender também é agir.</h3><p>Não precisa acertar tudo. Leia as explicações, descubra o que pode melhorar e tente novamente quando quiser.</p><button class="text-button" id="quizRestart" type="button">Recomeçar quiz ↻</button></aside>
+      </div>
+    </section>
+
+    <section class="section source-section" id="fontes">
+      <div class="section-head"><div><span class="eyebrow">09 · PARA PESQUISAR MAIS</span><h2>Fontes e referências<br><em>para continuar aprendendo.</em></h2></div><p>Os dados e as metas citados nesta página podem ser conferidos nos materiais institucionais abaixo.</p></div>
+      <div class="source-list">
+        <a href="https://brasil.un.org/pt-br/sdgs/12" target="_blank" rel="noopener noreferrer"><span><strong>Nações Unidas no Brasil</strong><small>ODS 12 — Consumo e produção responsáveis e suas metas.</small></span><b>↗</b></a>
+        <a href="https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44280-coleta-de-lixo-atende-93-dos-domicilios-mas-4-7-milhoes-ainda-queimam-residuos-em-2024" target="_blank" rel="noopener noreferrer"><span><strong>IBGE · PNAD Contínua 2024</strong><small>Coleta de lixo atende 93% dos domicílios, mas 4,7 milhões ainda queimam resíduos.</small></span><b>↗</b></a>
+        <a href="https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/sinisa/resultados-sinisa" target="_blank" rel="noopener noreferrer"><span><strong>Ministério das Cidades · SINISA</strong><small>Relatórios e indicadores oficiais de saneamento e resíduos sólidos.</small></span><b>↗</b></a>
+        <a href="https://www.gov.br/mma/pt-br" target="_blank" rel="noopener noreferrer"><span><strong>Ministério do Meio Ambiente e Mudança do Clima</strong><small>Políticas públicas, programas e informações ambientais.</small></span><b>↗</b></a>
+        <a href="https://www.gov.br/ana/pt-br" target="_blank" rel="noopener noreferrer"><span><strong>Agência Nacional de Águas e Saneamento Básico</strong><small>Informações sobre recursos hídricos e saneamento.</small></span><b>↗</b></a>
+      </div>
+      <p class="source-method">Nota metodológica: os percentuais apresentados referem-se à PNAD Contínua do IBGE, ano de referência 2024, e descrevem o destino do lixo nos domicílios. Não devem ser interpretados como taxa de reciclagem.</p>
+    </section>
+
+    <section class="closing-band">
+      <span class="eyebrow eyebrow-light">EcoConsciente · Projeto educativo</span>
+      <h2>Comece pelo que está<br><em>ao seu alcance.</em></h2>
+      <a class="button button-light" href="#inicio">Voltar ao início ↑</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#inicio"><span class="brand-symbol" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M8 28C8 14 19 7 33 7c0 14-7 25-20 25"/><path d="M9 32c5-8 11-13 20-18"/></svg></span><span>EcoConsciente</span></a>
+    <p>Educação ambiental, consumo consciente e informação acessível.</p>
+    <small>As imagens são carregadas de fontes externas e precisam de conexão com a internet.</small>
+    <div class="footer-columns">
+      <div><strong>Explore</strong><a href="#sobre">O projeto</a><a href="#aprender">Aprender</a><a href="#reciclagem">Guia de reciclagem</a></div>
+      <div><strong>Participe</strong><a href="#desafio">Desafio de 7 dias</a><a href="#ferramentas">Calculadora</a><a href="#quiz">Quiz</a></div>
+      <div><strong>Referências</strong><a href="#fontes">Fontes consultadas</a><a href="https://brasil.un.org/pt-br/sdgs/12" target="_blank" rel="noopener noreferrer">ODS 12 · ONU ↗</a></div>
+    </div>
+    <div class="footer-bottom"><span>Projeto educativo · ODS 12</span><a href="#fontes">Consultar fontes</a><span>Feito para aprender e compartilhar.</span></div>
+  </footer>
+  <button class="back-top" id="backTop" type="button" aria-label="Voltar ao topo">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
