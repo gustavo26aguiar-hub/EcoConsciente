@@ -1,0 +1,69 @@
+/* EcoConsciente — ponte para a folha de estilos do projeto.
+   O HTML já solicita estilo.css; o desenho original permanece em style.css. */
+@import url("./style.css");
+
+/* Conteúdo deve continuar legível mesmo sem JavaScript ou IntersectionObserver.
+   As classes são adicionadas pelo script como aprimoramento, nunca como requisito. */
+.reveal,
+.reveal.is-visible,
+.photo-reveal,
+.photo-reveal.photo-visible {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  transition: none !important;
+  animation: none !important;
+  will-change: auto !important;
+}
+
+/* Reforço responsivo para telas estreitas, preservando as cores e componentes. */
+@media (max-width: 760px) {
+  .hero,
+  .intro-band,
+  .feature-row,
+  .ods-panel,
+  .recycle-tool,
+  .calculator,
+  .challenge-layout,
+  .quiz-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .pillar-grid,
+  .topic-grid,
+  .data-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .section-head {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .material-picker {
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .material-detail {
+    min-width: 0;
+  }
+
+  .feature-photo img {
+    min-height: 0;
+    height: clamp(220px, 65vw, 360px);
+  }
+}
+
+@media (max-width: 480px) {
+  .material-columns {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .footer-columns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
