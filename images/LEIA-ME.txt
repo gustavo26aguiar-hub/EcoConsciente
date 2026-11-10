@@ -1,0 +1,9 @@
+EcoConsciente — pacote corrigido para GitHub Pages
+
+As quatro imagens internas foram incorporadas ao index.html para evitar imagens quebradas caso a pasta images seja esquecida durante o envio ao GitHub. A pasta images/ também está incluída no projeto. A imagem principal (hero) foi preservada.
+
+PUBLICAÇÃO:
+1. Extraia este ZIP.
+2. Abra a pasta EcoConsciente.
+3. Envie TODO o conteúdo dela para a raiz do repositório GitHub: index.html, style.css, script.js, LEIA-ME.txt e images/.
+4. Aguarde a publicação do GitHub Pages e atualize o site com Ctrl + F5.
