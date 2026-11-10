@@ -572,4 +572,3 @@ button:disabled,.quiz-answer:disabled{cursor:default}
 @media(max-width:480px){
   #aprender .pillar-card > img{aspect-ratio: 4 / 3; height:auto;}
 }
-
